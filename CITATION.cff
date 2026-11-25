@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "To cite this catalog, use the metadata of this file."
+title: "episteme"
+type: dataset
+abstract: "A rights-aware research index for agents, readable by humans. Full text is hosted strictly only where the license allows commercial reuse. Every other work is a citation card that points to its publisher."
+authors:
+  - name: "Convective Numerical Systems LLC"
+    alias: "aetelier.xyz"
+    email: "support@aetelier.xyz"
+    website: "https://aetelier.xyz"
+contact:
+  - name: "Convective Numerical Systems LLC"
+    email: "support@aetelier.xyz"
+version: "0.0.1"
+date-released: "2026-11-25"
+repository-code: "https://github.com/aetelierxyz/episteme"
+url: "https://aetelier.xyz/docs/research/library/"
+license-url: "https://github.com/aetelierxyz/episteme/blob/main/LICENSE.md"
+keywords:
+  - research catalog
+  - open access
+  - copyright licenses
+  - quantitative finance
+  - market microstructure
+  - ai agents

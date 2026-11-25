@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.1/schema/work.schema.json",
+  "title": "episteme work card",
+  "description": "Front matter of works/<id>/card.md and one line of index/catalog.jsonl. Keys are flat. Invariants enforced by tools/episteme.py: rights_tier follows from rights_license, rights_basis and the rights_* flags; files is empty unless rights_tier is A and rights_hold is false; every topic is a term of schema/topics.json; an abstract is present only when abstract_included is true and abstract_basis is not none, as a block quote under '## Abstract' that ends with its 'Source:' line; the card body then holds the headings '## Scientific Summary', '## Engineering Summary', '## Application Summary' in that order, each with at most 100 words, and a '## Card license' section with the fixed notice. License of a card: summaries CC BY 4.0, front matter CC0 1.0, abstract as stated in its 'Source:' line.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "type",
+    "title",
+    "authors",
+    "year",
+    "venue",
+    "volume",
+    "issue",
+    "pages",
+    "publisher",
+    "doi",
+    "arxiv",
+    "isbn",
+    "url",
+    "url_free",
+    "related",
+    "version",
+    "rights_tier",
+    "rights_license",
+    "rights_license_url",
+    "rights_basis",
+    "rights_commercial",
+    "rights_derivatives",
+    "rights_share_alike",
+    "rights_holder",
+    "rights_evidence",
+    "rights_verified",
+    "rights_attribution",
+    "rights_hold",
+    "rights_note",
+    "files",
+    "abstract_included",
+    "abstract_basis",
+    "keywords",
+    "topics",
+    "summary_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "description": "Version of this schema. It increases when a key or a topic term is removed, renamed, or changes type or meaning. New keys and new topic terms do not increase it.",
+      "const": 1
+    },
+    "id": {
+      "description": "Stable identifier and directory name in snake_case: first author family name, year, first title word. Hyphens become underscores. Never changes.",
+      "type": "string",
+      "pattern": "^[a-z]+(_[a-z]+)*_[0-9]{4}_[a-z0-9]+(_[a-z0-9]+)*$"
+    },
+    "type": {
+      "description": "Kind of work.",
+      "enum": ["article", "proceedings", "preprint", "book", "chapter", "thesis", "report", "slides"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "description": "Authors in order, each as 'Family, Given'.",
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1500,
+      "maximum": 2100
+    },
+    "venue": {
+      "description": "Journal, proceedings, repository or series.",
+      "type": ["string", "null"]
+    },
+    "volume": {"type": ["string", "null"]},
+    "issue": {"type": ["string", "null"]},
+    "pages": {"type": ["string", "null"]},
+    "publisher": {"type": ["string", "null"]},
+    "doi": {
+      "description": "DOI of the publication of record, without resolver prefix.",
+      "type": ["string", "null"],
+      "pattern": "^10\\.[0-9]{4,9}/\\S+$"
+    },
+    "arxiv": {
+      "description": "arXiv identifier without version.",
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}\\.[0-9]{4,5}$"
+    },
+    "isbn": {"type": ["string", "null"]},
+    "url": {
+      "description": "Canonical landing page.",
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "url_free": {
+      "description": "Free legal copy seen on the rights_verified date, if any.",
+      "type": ["string", "null"],
+      "pattern": "^https?://"
+    },
+    "related": {
+      "description": "Reserved for code, data and other companion resources. Empty in schema version 1.",
+      "type": "array",
+      "items": {"type": "string", "pattern": "^https?://"},
+      "maxItems": 0
+    },
+    "version": {
+      "description": "Version of the work that the rights_* fields describe: preprint, accepted manuscript (am) or version of record (vor). The license follows the version.",
+      "enum": ["preprint", "am", "vor"]
+    },
+    "rights_tier": {
+      "description": "A: open license that allows commercial reuse; full text may be hosted. B: open license with a NonCommercial or NoDerivatives restriction; card only. C: no reuse license; card only.",
+      "enum": ["A", "B", "C"]
+    },
+    "rights_license": {
+      "description": "SPDX identifier of the license of the described version. LicenseRef-arXiv-nonexclusive-1.0: arXiv.org perpetual non-exclusive license 1.0. LicenseRef-all-rights-reserved: copyright with no reuse license. LicenseRef-permission: written grant filed as PERMISSION.md.",
+      "type": "string",
+      "pattern": "^(CC0-1\\.0|CC-PDM-1\\.0|CC-BY(-NC)?(-ND|-SA)?-[1-4]\\.[0-9]|LicenseRef-[A-Za-z0-9.-]+)$"
+    },
+    "rights_license_url": {
+      "description": "Official URL of the license: the deed on creativecommons.org or the license page on arxiv.org. Null when rights_license is LicenseRef-all-rights-reserved or LicenseRef-permission.",
+      "type": ["string", "null"],
+      "pattern": "^https://"
+    },
+    "rights_basis": {
+      "description": "What grants reuse: an open license, a written permission, public-domain status, or none.",
+      "enum": ["license", "permission", "public-domain", "none"]
+    },
+    "rights_commercial": {
+      "description": "Commercial reuse is permitted.",
+      "type": "boolean"
+    },
+    "rights_derivatives": {
+      "description": "Sharing adaptations is permitted.",
+      "type": "boolean"
+    },
+    "rights_share_alike": {
+      "description": "Adaptations must carry the same license.",
+      "type": "boolean"
+    },
+    "rights_holder": {
+      "description": "Copyright holder as stated at the source.",
+      "type": ["string", "null"]
+    },
+    "rights_evidence": {
+      "description": "Where the license was read.",
+      "type": "string",
+      "minLength": 1
+    },
+    "rights_verified": {
+      "description": "Date the license was read, ISO 8601.",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "rights_attribution": {
+      "description": "Credit line that every reuse of a tier A work must carry. Null for tier B and C.",
+      "type": ["string", "null"]
+    },
+    "rights_hold": {
+      "description": "True while a conflict in the rights evidence is unresolved. A work on hold is treated as tier C.",
+      "type": "boolean"
+    },
+    "rights_note": {"type": ["string", "null"]},
+    "files": {
+      "description": "Hosted files of the work, stored beside the card. Empty unless rights_tier is A and rights_hold is false.",
+      "type": "array",
+      "items": {"enum": ["source.pdf", "fulltext.md"]},
+      "uniqueItems": true
+    },
+    "abstract_included": {
+      "description": "The card body holds the original abstract, verbatim, as a block quote under an '## Abstract' heading, followed by a 'Source:' line that states its terms.",
+      "type": "boolean"
+    },
+    "abstract_basis": {
+      "description": "What clears reproduction of the original abstract: the license of the work (tier A only), the CC0 dedication of arXiv descriptive metadata (needs arxiv), a written permission, or none.",
+      "enum": ["work-license", "arxiv-cc0", "permission", "none"]
+    },
+    "keywords": {
+      "description": "Keywords published with the work: author keywords or publisher index terms.",
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "topics": {
+      "description": "Subject terms from schema/topics.json, the one vocabulary shared by all works.",
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+      "uniqueItems": true
+    },
+    "summary_status": {
+      "description": "State of the three curator summaries in the card body: Scientific Summary, Engineering Summary, Application Summary. Each holds at most 100 words and is licensed CC BY 4.0 by Convective Numerical Systems LLC.",
+      "enum": ["pending", "draft", "reviewed"]
+    }
+  }
+}

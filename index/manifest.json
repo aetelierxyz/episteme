@@ -1,0 +1,284 @@
+{
+  "name": "episteme",
+  "version": "0.0.1",
+  "tag": "v0.0.1",
+  "released": "2026-11-25",
+  "schema_version": 1,
+  "repository": "https://github.com/aetelierxyz/episteme",
+  "site": "https://aetelier.xyz/docs/research/library/",
+  "base_url": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.1/",
+  "licensor": "Convective Numerical Systems LLC",
+  "contact": "support@aetelier.xyz",
+  "counts": {
+    "works": 22,
+    "tier_a": 4,
+    "tier_b": 3,
+    "tier_c": 15,
+    "hosted_files": 3,
+    "abstracts": 9,
+    "summaries": {
+      "pending": 22,
+      "draft": 0,
+      "reviewed": 0
+    }
+  },
+  "files": [
+    {
+      "path": "index/catalog.jsonl",
+      "role": "catalog",
+      "bytes": 30067,
+      "sha256": "44b22035be10697fc1714884325d21800a97e86c0b99d8627b0b4beef0443bd5"
+    },
+    {
+      "path": "index/catalog.md",
+      "role": "catalog-table",
+      "bytes": 7831,
+      "sha256": "a0c1769cfcc5d54fa68e280ba66b04cbd12b8467db1283523c889178c387f382"
+    },
+    {
+      "path": "schema/work.schema.json",
+      "role": "schema",
+      "bytes": 8193,
+      "sha256": "e681d1aca6df9cd09b8f3d572701219c7940d2c77fb5c078f99e685a1a52451e"
+    },
+    {
+      "path": "schema/topics.json",
+      "role": "topics",
+      "bytes": 3301,
+      "sha256": "e6ef2d0201fad1c123c51ed1d827e18a9b15aee4d164004d9450785d05e40189"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "agent-rules",
+      "bytes": 2122,
+      "sha256": "c77a8b27b1fc375b6c178acf3198d84d424ae4f09f0c0833dc4c7705fb94a465"
+    },
+    {
+      "path": "LICENSE.md",
+      "role": "license-map",
+      "bytes": 4885,
+      "sha256": "69f4e963f04aba77f1957b2e6951ff1988cdbdb877bef310520a0e0f0f8cc00c"
+    }
+  ],
+  "works": [
+    {
+      "id": "albers_2026_open",
+      "card": {
+        "path": "works/albers_2026_open/card.md",
+        "bytes": 1643,
+        "sha256": "362e3b367cb4fefb66afd15a6173f200ea920fde6c0c4d2f674399aed6887b2f"
+      },
+      "hosted": []
+    },
+    {
+      "id": "arjovsky_2017_wasserstein",
+      "card": {
+        "path": "works/arjovsky_2017_wasserstein/card.md",
+        "bytes": 2089,
+        "sha256": "5ea02c94e8adf763f228cfc8337cf4ed52ef23aa81fc77fb2335aa55dfb4d218"
+      },
+      "hosted": []
+    },
+    {
+      "id": "berti_2025_tlob",
+      "card": {
+        "path": "works/berti_2025_tlob/card.md",
+        "bytes": 3623,
+        "sha256": "271c2f0cd6a7cf6c67f5496a503e61f69a9799cb7b4388f1dc26da606b501cf2"
+      },
+      "hosted": []
+    },
+    {
+      "id": "bouchaud_2018_trades",
+      "card": {
+        "path": "works/bouchaud_2018_trades/card.md",
+        "bytes": 1642,
+        "sha256": "78422008f926a91db2d848b843236d9659214eb820db605f7ff3e9e523cc87d7"
+      },
+      "hosted": []
+    },
+    {
+      "id": "briola_2025_deep",
+      "card": {
+        "path": "works/briola_2025_deep/card.md",
+        "bytes": 3533,
+        "sha256": "05f6ea3b04fd8ceaf8a757d6846bd4e233245a3c6b573a69dc72af8492fa7fcc"
+      },
+      "hosted": []
+    },
+    {
+      "id": "coletta_2021_towards",
+      "card": {
+        "path": "works/coletta_2021_towards/card.md",
+        "bytes": 3720,
+        "sha256": "ff6b539e57915746cbe55f3c6d2c468234c02589fd0e4b79ca401278df2ad4b3"
+      },
+      "hosted": []
+    },
+    {
+      "id": "eckmann_1987_recurrence",
+      "card": {
+        "path": "works/eckmann_1987_recurrence/card.md",
+        "bytes": 1480,
+        "sha256": "cef564989157a0d30da8db4a24111b17e62dfd701bf837cf34eb4787efbbfdd2"
+      },
+      "hosted": []
+    },
+    {
+      "id": "jiang_2012_introduction",
+      "card": {
+        "path": "works/jiang_2012_introduction/card.md",
+        "bytes": 1451,
+        "sha256": "f5145e1153178096ac612b21afdb2ddd615f6e9f8ce74ae00e1c93021122e18a"
+      },
+      "hosted": []
+    },
+    {
+      "id": "lau_2026_funding",
+      "card": {
+        "path": "works/lau_2026_funding/card.md",
+        "bytes": 1483,
+        "sha256": "4f631df4a0d15b9a8efbdbea87379ab1a95587b92be3660e447ce85090f0d56c"
+      },
+      "hosted": []
+    },
+    {
+      "id": "lucchese_2024_short_term",
+      "card": {
+        "path": "works/lucchese_2024_short_term/card.md",
+        "bytes": 3373,
+        "sha256": "02028f1323e934a156fcdd769420b4fd50b4f296426a557c6b7985f0b481ee8e"
+      },
+      "hosted": [
+        {
+          "path": "works/lucchese_2024_short_term/source.pdf",
+          "license": "CC-BY-4.0",
+          "bytes": 3056144,
+          "sha256": "6c23f4f35b54c79a0fc043236af7bd65375885702fa34d42f27b8af863def564"
+        }
+      ]
+    },
+    {
+      "id": "makarov_2020_trading",
+      "card": {
+        "path": "works/makarov_2020_trading/card.md",
+        "bytes": 1685,
+        "sha256": "32762ec90c416baac6069ca74c76a1855abd101e22e23970600f80f44247a130"
+      },
+      "hosted": []
+    },
+    {
+      "id": "marwan_2007_recurrence",
+      "card": {
+        "path": "works/marwan_2007_recurrence/card.md",
+        "bytes": 3515,
+        "sha256": "1e6aca0e01eae3f43849a65076abebbf6388f78862d50b267b56271727a8b065"
+      },
+      "hosted": []
+    },
+    {
+      "id": "milgrom_1982_information",
+      "card": {
+        "path": "works/milgrom_1982_information/card.md",
+        "bytes": 1411,
+        "sha256": "0c6f76e7461518695c4e4b3a66af411f701421196e6d4e0f9f3f701101ad8d21"
+      },
+      "hosted": []
+    },
+    {
+      "id": "nedic_2020_distributed",
+      "card": {
+        "path": "works/nedic_2020_distributed/card.md",
+        "bytes": 1652,
+        "sha256": "57fe6c86859dda4305e5c248b9e0627544bc137b3e98df8eadaf3d5fbad6b24c"
+      },
+      "hosted": []
+    },
+    {
+      "id": "olfati_saber_2004_consensus",
+      "card": {
+        "path": "works/olfati_saber_2004_consensus/card.md",
+        "bytes": 1761,
+        "sha256": "7871125315b90b78b2136424d10d71ca6553690633682b3ac508a8ff2ca3bb12"
+      },
+      "hosted": []
+    },
+    {
+      "id": "olfati_saber_2007_consensus",
+      "card": {
+        "path": "works/olfati_saber_2007_consensus/card.md",
+        "bytes": 1892,
+        "sha256": "dc2bfe3f6e9e2ab396f0836c3b1948bebf721c95f23ce683b141674e84e7134c"
+      },
+      "hosted": []
+    },
+    {
+      "id": "ozaki_1979_maximum",
+      "card": {
+        "path": "works/ozaki_1979_maximum/card.md",
+        "bytes": 1443,
+        "sha256": "2fbf597a430d81d55906df4db674cb609cd18953af9dc03fab0c7edacdab0f61"
+      },
+      "hosted": []
+    },
+    {
+      "id": "ratcliffe_2019_win",
+      "card": {
+        "path": "works/ratcliffe_2019_win/card.md",
+        "bytes": 1695,
+        "sha256": "07e87f725ed5877aa4e9fb8c82ea3929cdccf08138cb38d60e8d2da2f971ec8b"
+      },
+      "hosted": []
+    },
+    {
+      "id": "safa_2024_stock",
+      "card": {
+        "path": "works/safa_2024_stock/card.md",
+        "bytes": 2078,
+        "sha256": "2f5bfe21ecedea9eed438fbfedc9c087bc708306f09fc9f61b6f139829becfe5"
+      },
+      "hosted": []
+    },
+    {
+      "id": "shabani_2023_predicting",
+      "card": {
+        "path": "works/shabani_2023_predicting/card.md",
+        "bytes": 3335,
+        "sha256": "cbbbcbf83cee12bc0724f3b53a76d5d78ad1f4092eda5bff916ddf1ac8669bc9"
+      },
+      "hosted": [
+        {
+          "path": "works/shabani_2023_predicting/source.pdf",
+          "license": "CC-BY-4.0",
+          "bytes": 1107170,
+          "sha256": "56310d039b6efcdb25297e053c50a4ab9e8b49140045e9fbf737fde702cf44c7"
+        }
+      ]
+    },
+    {
+      "id": "xiao_2025_lit",
+      "card": {
+        "path": "works/xiao_2025_lit/card.md",
+        "bytes": 3224,
+        "sha256": "7af960445cd039a0ba9e30f9495b0746947b49cf0a6e29564d225ee8080cb22e"
+      },
+      "hosted": [
+        {
+          "path": "works/xiao_2025_lit/source.pdf",
+          "license": "CC-BY-4.0",
+          "bytes": 4062416,
+          "sha256": "dfa53739c2fcd9028098e4f47dbc35997584364b55d3d6a8321dab246e05617d"
+        }
+      ]
+    },
+    {
+      "id": "zhang_2019_deeplob",
+      "card": {
+        "path": "works/zhang_2019_deeplob/card.md",
+        "bytes": 3098,
+        "sha256": "3a1dc4e69f5b8593bd8b0dfb4126b7ca2844fa47fdc98b9a9860a350eeb3e99d"
+      },
+      "hosted": []
+    }
+  ]
+}

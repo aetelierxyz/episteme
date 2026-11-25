@@ -1,0 +1,28 @@
+name: Report an error
+description: Report a wrong field in a card or in the catalog.
+title: "Error: "
+body:
+  - type: markdown
+    attributes:
+      value: For a rights question or a removal request, write to support@aetelier.xyz instead.
+  - type: input
+    id: work
+    attributes:
+      label: Work
+      description: The `id` of the card, as in `bouchaud_2018_trades`.
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field
+      description: The key that is wrong, as in `rights_license`.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correct value and where it can be read
+      description: Give a URL or a page as evidence.
+    validations:
+      required: true

@@ -1,0 +1,57 @@
+version = 1
+SPDX-PackageName = "episteme"
+SPDX-PackageDownloadLocation = "https://github.com/aetelierxyz/episteme"
+
+[[annotations]]
+path = ["tools/**"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Convective Numerical Systems LLC"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["*.md", ".gitignore", ".gitattributes", "CITATION.cff", ".github/**", "schema/**", "index/**", "works/*/cite.bib"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Convective Numerical Systems LLC"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["works/*/card.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Convective Numerical Systems LLC"
+SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"
+
+[[annotations]]
+path = ["works/lucchese_2024_short_term/card.md"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Convective Numerical Systems LLC", "2024 The Authors"]
+SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"
+
+[[annotations]]
+path = ["works/shabani_2023_predicting/card.md"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Convective Numerical Systems LLC", "2023 The Author(s)"]
+SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"
+
+[[annotations]]
+path = ["works/xiao_2025_lit/card.md"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Convective Numerical Systems LLC", "2025 Xiao, Ventre, Wang, Li, Huan and Liu"]
+SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"
+
+[[annotations]]
+path = ["works/lucchese_2024_short_term/source.pdf"]
+precedence = "override"
+SPDX-FileCopyrightText = "2024 The Authors"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["works/shabani_2023_predicting/source.pdf"]
+precedence = "override"
+SPDX-FileCopyrightText = "2023 The Author(s)"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["works/xiao_2025_lit/source.pdf"]
+precedence = "override"
+SPDX-FileCopyrightText = "2025 Xiao, Ventre, Wang, Li, Huan and Liu"
+SPDX-License-Identifier = "CC-BY-4.0"

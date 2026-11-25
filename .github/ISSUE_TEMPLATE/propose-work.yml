@@ -1,0 +1,33 @@
+name: Propose a work
+description: Suggest a paper, book or presentation for the catalog.
+title: "Work: "
+body:
+  - type: markdown
+    attributes:
+      value: Maintainers decide what enters the catalog and write every card. Attach no file of the work.
+  - type: input
+    id: locator
+    attributes:
+      label: DOI, arXiv identifier or URL
+      description: One address where the work is published.
+    validations:
+      required: true
+  - type: input
+    id: citation
+    attributes:
+      label: Title, first author and year
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Where the license is stated
+      description: URL or page of the license statement, if known.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+    validations:
+      required: false

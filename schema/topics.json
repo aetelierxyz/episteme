@@ -1,0 +1,109 @@
+{
+  "topics": [
+    {
+      "id": "arbitrage",
+      "label": "Arbitrage",
+      "definition": "Price differences across venues or instruments and the trades that exploit them."
+    },
+    {
+      "id": "consensus",
+      "label": "Consensus",
+      "definition": "Agreement protocols among networked agents."
+    },
+    {
+      "id": "crypto-markets",
+      "label": "Crypto markets",
+      "definition": "Markets for crypto assets: venues, instruments and trading."
+    },
+    {
+      "id": "deep-learning",
+      "label": "Deep learning",
+      "definition": "Neural network models and their training."
+    },
+    {
+      "id": "distributed-optimization",
+      "label": "Distributed optimization",
+      "definition": "Optimization solved by networked agents without a central coordinator."
+    },
+    {
+      "id": "forecasting",
+      "label": "Forecasting",
+      "definition": "Prediction of future prices, returns or states of a series."
+    },
+    {
+      "id": "generative-models",
+      "label": "Generative models",
+      "definition": "Models that learn a data distribution and sample from it."
+    },
+    {
+      "id": "graph-theory",
+      "label": "Graph theory",
+      "definition": "Graphs, their spectra and Laplacians."
+    },
+    {
+      "id": "information-economics",
+      "label": "Information economics",
+      "definition": "Trade and prices under private or asymmetric information."
+    },
+    {
+      "id": "limit-order-book",
+      "label": "Orderbook",
+      "definition": "Structure, dynamics and data of the Orderbook."
+    },
+    {
+      "id": "market-data",
+      "label": "Market data",
+      "definition": "Market data sets: collection, structure and quality."
+    },
+    {
+      "id": "market-manipulation",
+      "label": "Market manipulation",
+      "definition": "Manipulative trading and its detection."
+    },
+    {
+      "id": "market-microstructure",
+      "label": "Market microstructure",
+      "definition": "Price formation, liquidity and price impact from the mechanics of trading."
+    },
+    {
+      "id": "market-simulation",
+      "label": "Market simulation",
+      "definition": "Synthetic markets built with agent-based or generative simulators."
+    },
+    {
+      "id": "multi-agent-systems",
+      "label": "Multi-agent systems",
+      "definition": "Systems of interacting autonomous agents."
+    },
+    {
+      "id": "nonlinear-dynamics",
+      "label": "Nonlinear dynamics",
+      "definition": "Nonlinear dynamical systems and chaos."
+    },
+    {
+      "id": "perpetual-futures",
+      "label": "Perpetual futures",
+      "definition": "Perpetual swap contracts and their funding rates."
+    },
+    {
+      "id": "point-processes",
+      "label": "Point processes",
+      "definition": "Models of event arrivals in time, including Hawkes self-exciting processes."
+    },
+    {
+      "id": "recurrence-plots",
+      "label": "Recurrence plots",
+      "definition": "Recurrence plots and recurrence quantification analysis."
+    },
+    {
+      "id": "reinforcement-learning",
+      "label": "Reinforcement learning",
+      "definition": "Learning of policies from interaction and reward."
+    },
+    {
+      "id": "time-series",
+      "label": "Time series",
+      "definition": "Analysis and modelling of time-ordered data."
+    }
+  ]
+}
