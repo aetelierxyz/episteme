@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.2 - 2026-11-26
+
+- Catalog pages moved to https://aetelier.xyz/docs/episteme/.
+
 ## 0.0.1 - 2026-11-25
 
 First publication.
@@ -10,4 +14,4 @@ First publication.
 - Topic vocabulary of 21 terms shared by all works.
 - Card schema, version 1.
 - Manifest with the sha256 of every card and hosted file.
-- Catalog pages at https://aetelier.xyz/docs/research/library/.
+- Catalog pages on aetelier.xyz.

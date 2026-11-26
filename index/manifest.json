@@ -1,12 +1,12 @@
 {
   "name": "episteme",
-  "version": "0.0.1",
-  "tag": "v0.0.1",
-  "released": "2026-11-25",
+  "version": "0.0.2",
+  "tag": "v0.0.2",
+  "released": "2026-11-26",
   "schema_version": 1,
   "repository": "https://github.com/aetelierxyz/episteme",
-  "site": "https://aetelier.xyz/docs/research/library/",
-  "base_url": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.1/",
+  "site": "https://aetelier.xyz/docs/episteme/",
+  "base_url": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.2/",
   "licensor": "Convective Numerical Systems LLC",
   "contact": "support@aetelier.xyz",
   "counts": {
@@ -39,7 +39,7 @@
       "path": "schema/work.schema.json",
       "role": "schema",
       "bytes": 8193,
-      "sha256": "e681d1aca6df9cd09b8f3d572701219c7940d2c77fb5c078f99e685a1a52451e"
+      "sha256": "a21fb4d081f9eb11485e8d64a3b138730c839cad59c7f362903a7f5d14556ca4"
     },
     {
       "path": "schema/topics.json",
@@ -51,7 +51,7 @@
       "path": "AGENTS.md",
       "role": "agent-rules",
       "bytes": 2122,
-      "sha256": "c77a8b27b1fc375b6c178acf3198d84d424ae4f09f0c0833dc4c7705fb94a465"
+      "sha256": "5dbe18cc030208ab13f97c40bff72cacb9ffe501078b6e319d799d29c761c869"
     },
     {
       "path": "LICENSE.md",

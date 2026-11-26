@@ -38,8 +38,8 @@ One rule holds everywhere: a full text is present only if commercial reuse is pe
 # Use
 
 - Agents: read `AGENTS.md`, then `index/manifest.json`, then `index/catalog.jsonl`.
-- Pinned address of any file: `https://raw.githubusercontent.com/aetelierxyz/episteme/<tag>/<path>`. Releases are tagged `v` plus the version, as in `v0.0.1`.
-- Humans: open https://aetelier.xyz/docs/research/library/ or `index/catalog.md`.
+- Pinned address of any file: `https://raw.githubusercontent.com/aetelierxyz/episteme/<tag>/<path>`. Releases are tagged `v` plus the version, as in `v0.0.2`.
+- Humans: open https://aetelier.xyz/docs/episteme/ or `index/catalog.md`.
 - Validate a copy: `uv run tools/episteme.py check`
 
 # Rights and removal

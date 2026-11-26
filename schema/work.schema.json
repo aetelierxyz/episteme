@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.1/schema/work.schema.json",
+  "$id": "https://raw.githubusercontent.com/aetelierxyz/episteme/v0.0.2/schema/work.schema.json",
   "title": "episteme work card",
   "description": "Front matter of works/<id>/card.md and one line of index/catalog.jsonl. Keys are flat. Invariants enforced by tools/episteme.py: rights_tier follows from rights_license, rights_basis and the rights_* flags; files is empty unless rights_tier is A and rights_hold is false; every topic is a term of schema/topics.json; an abstract is present only when abstract_included is true and abstract_basis is not none, as a block quote under '## Abstract' that ends with its 'Source:' line; the card body then holds the headings '## Scientific Summary', '## Engineering Summary', '## Application Summary' in that order, each with at most 100 words, and a '## Card license' section with the fixed notice. License of a card: summaries CC BY 4.0, front matter CC0 1.0, abstract as stated in its 'Source:' line.",
   "type": "object",

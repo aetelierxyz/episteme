@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -11,13 +12,15 @@ import jsonschema
 import pytest
 import yaml
 
-SCHEMA_TEXT = (episteme.ROOT / "schema" / "work.schema.json").read_text(
-    encoding="utf-8"
+RELEASE = episteme.Release("0.0.1", "2026-11-25")
+SCHEMA_TEXT = re.sub(
+    r"/episteme/[^/]+/schema/",
+    f"/episteme/{RELEASE.tag}/schema/",
+    (episteme.ROOT / "schema" / "work.schema.json").read_text(encoding="utf-8"),
 )
 SCHEMA = json.loads(SCHEMA_TEXT)
 VALIDATOR = jsonschema.Draft7Validator(SCHEMA)
 TODAY = dt.date(2026, 11, 25)
-RELEASE = episteme.Release("0.0.1", "2026-11-25")
 ATTRIBUTION = "Doe (2020). Sample. CC BY 4.0."
 CC = "https://creativecommons.org"
 TOPICS: episteme.Topics = {

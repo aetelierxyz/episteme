@@ -11,10 +11,10 @@ authors:
 contact:
   - name: "Convective Numerical Systems LLC"
     email: "support@aetelier.xyz"
-version: "0.0.1"
-date-released: "2026-11-25"
+version: "0.0.2"
+date-released: "2026-11-26"
 repository-code: "https://github.com/aetelierxyz/episteme"
-url: "https://aetelier.xyz/docs/research/library/"
+url: "https://aetelier.xyz/docs/episteme/"
 license-url: "https://github.com/aetelierxyz/episteme/blob/main/LICENSE.md"
 keywords:
   - research catalog
